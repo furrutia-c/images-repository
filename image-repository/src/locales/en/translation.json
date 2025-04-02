@@ -1,0 +1,97 @@
+{
+  "header": {
+    "title": "Brand Center",
+    "uploadButton": "Upload Image",
+    "searchPlaceholder": "Search images..."
+  },
+  "categories": {
+    "title": "Categories",
+    "manage": "Manage Categories",
+    "add": "Add Category",
+    "edit": "Edit Category",
+    "delete": "Delete Category",
+    "name": "Category Name",
+    "all": "All",
+    "manageDescription": "Create, edit or delete categories to organize your images.",
+    "errorExists": "A category with this name already exists",
+    "errorRequired": "Category name is required",
+    "errorDeleteInUse": "This category cannot be deleted because it is being used by one or more images.",
+    "placeholder": "Example: Logos, Photos, Documents",
+    "descriptionPlaceholder": "Brief description of the category...",
+    "existing": "Existing categories",
+    "searchPlaceholder": "Search categories...",
+    "confirmDelete": "Are you sure you want to delete the category"
+  },
+  "tags": {
+    "title": "Tags",
+    "manage": "Manage Tags",
+    "add": "Add Tag",
+    "edit": "Edit Tag",
+    "delete": "Delete Tag",
+    "name": "Tag Name",
+    "selectPlaceholder": "Select tags...",
+    "manageDescription": "Create, edit or delete tags to organize your images.",
+    "errorExists": "A tag with this name already exists",
+    "errorRequired": "Tag name is required",
+    "errorDeleteInUse": "This tag cannot be deleted because it is being used by one or more images.",
+    "placeholder": "Example: design, logo, web",
+    "example": "example",
+    "preview": "Preview",
+    "existing": "Existing tags",
+    "searchPlaceholder": "Search tags...",
+    "confirmDelete": "Are you sure you want to delete the tag"
+  },
+  "upload": {
+    "title": "Upload Image",
+    "dragDrop": "Drag and drop image here, or click to select",
+    "selectCategory": "Select Category",
+    "addTags": "Add Tags",
+    "description": "Description",
+    "upload": "Upload",
+    "cancel": "Cancel"
+  },
+  "imageViewer": {
+    "delete": "Delete Image",
+    "edit": "Edit Image",
+    "download": "Download",
+    "close": "Close",
+    "openPdf": "Open PDF"
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "of": "of"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "name": "Name",
+    "description": "Description",
+    "noResults": "No results found",
+    "confirmDelete": "Confirm Deletion",
+    "cannotUndo": "This action cannot be undone.",
+    "yes": "Yes",
+    "no": "No",
+    "clearFilters": "Clear filters",
+    "showLess": "Show less",
+    "showAll": "Show all",
+    "more": "more",
+    "in": "in",
+    "for": "for",
+    "with": "with",
+    "tryDifferent": "Try with different search, category or tags",
+    "information": "Information",
+    "type": "Type",
+    "date": "Date",
+    "close": "Close",
+    "update": "Update",
+    "create": "Create",
+    "optional": "optional"
+  },
+  "language": {
+    "en": "English",
+    "es": "Spanish"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "header": {
+    "title": "Repositorio de Imágenes",
+    "uploadButton": "Subir Imagen",
+    "searchPlaceholder": "Buscar imágenes..."
+  },
+  "categories": {
+    "title": "Categorías",
+    "manage": "Gestionar Categorías",
+    "add": "Añadir Categoría",
+    "edit": "Editar Categoría",
+    "delete": "Eliminar Categoría",
+    "name": "Nombre de Categoría",
+    "all": "Todas",
+    "manageDescription": "Crea, edita o elimina categorías para organizar tus imágenes.",
+    "errorExists": "Ya existe una categoría con este nombre",
+    "errorRequired": "El nombre de la categoría es obligatorio",
+    "errorDeleteInUse": "No se puede eliminar esta categoría porque está siendo utilizada por una o más imágenes.",
+    "placeholder": "Ejemplo: Logos, Fotografías, Documentos",
+    "descriptionPlaceholder": "Breve descripción de la categoría...",
+    "existing": "Categorías existentes",
+    "searchPlaceholder": "Buscar categorías...",
+    "confirmDelete": "¿Estás seguro de que deseas eliminar la categoría"
+  },
+  "tags": {
+    "title": "Etiquetas",
+    "manage": "Gestionar Etiquetas",
+    "add": "Añadir Etiqueta",
+    "edit": "Editar Etiqueta",
+    "delete": "Eliminar Etiqueta",
+    "name": "Nombre de Etiqueta",
+    "selectPlaceholder": "Seleccionar etiquetas...",
+    "manageDescription": "Crea, edita o elimina etiquetas para organizar tus imágenes.",
+    "errorExists": "Ya existe una etiqueta con este nombre",
+    "errorRequired": "El nombre de la etiqueta es obligatorio",
+    "errorDeleteInUse": "No se puede eliminar esta etiqueta porque está siendo utilizada por una o más imágenes.",
+    "placeholder": "Ejemplo: diseño, logo, web",
+    "example": "ejemplo",
+    "preview": "Vista previa",
+    "existing": "Etiquetas existentes",
+    "searchPlaceholder": "Buscar etiquetas...",
+    "confirmDelete": "¿Estás seguro de que deseas eliminar la etiqueta"
+  },
+  "upload": {
+    "title": "Subir Imagen",
+    "dragDrop": "Arrastra y suelta la imagen aquí, o haz clic para seleccionar",
+    "selectCategory": "Seleccionar Categoría",
+    "addTags": "Añadir Etiquetas",
+    "description": "Descripción",
+    "upload": "Subir",
+    "cancel": "Cancelar"
+  },
+  "imageViewer": {
+    "delete": "Eliminar Imagen",
+    "edit": "Editar Imagen",
+    "download": "Descargar",
+    "close": "Cerrar",
+    "openPdf": "Abrir PDF"
+  },
+  "pagination": {
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "of": "de"
+  },
+  "common": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "name": "Nombre",
+    "description": "Descripción",
+    "noResults": "No se encontraron resultados",
+    "confirmDelete": "Confirmar Eliminación",
+    "cannotUndo": "Esta acción no se puede deshacer.",
+    "yes": "Sí",
+    "no": "No",
+    "clearFilters": "Limpiar filtros",
+    "showLess": "Mostrar menos",
+    "showAll": "Ver todas",
+    "more": "más",
+    "in": "en",
+    "for": "para",
+    "with": "con",
+    "tryDifferent": "Intenta con otra búsqueda, categoría o etiquetas",
+    "information": "Información",
+    "type": "Tipo",
+    "date": "Fecha",
+    "close": "Cerrar",
+    "update": "Actualizar",
+    "create": "Crear",
+    "optional": "opcional"
+  },
+  "language": {
+    "en": "Inglés",
+    "es": "Español"
+  }
+}
