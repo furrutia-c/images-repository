@@ -1,5 +1,6 @@
 import { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
+import { useTranslation } from 'react-i18next';
 import { useRepository } from '../context/RepositoryContext';
 import { ImageType } from '../types';
 
@@ -9,6 +10,7 @@ interface UploadModalProps {
 }
 
 export default function UploadModal({ isOpen, onClose }: UploadModalProps) {
+  const { t } = useTranslation();
   const { categories, tags, addImage } = useRepository();
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
@@ -78,7 +80,6 @@ export default function UploadModal({ isOpen, onClose }: UploadModalProps) {
         >
           <div className="fixed inset-0 bg-black/25 dark:bg-black/40" />
         </Transition.Child>
-
         <div className="fixed inset-0 overflow-y-auto">
           <div className="flex min-h-full items-center justify-center p-3 sm:p-4 text-center">
             <Transition.Child
@@ -96,13 +97,13 @@ export default function UploadModal({ isOpen, onClose }: UploadModalProps) {
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900 dark:text-gray-100"
                   >
-                    Agregar Nueva Imagen
+                    {t('upload.title')}
                   </Dialog.Title>
                   
                   <button
                     onClick={onClose}
                     className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300"
-                    aria-label="Cerrar"
+                    aria-label={t('common.close')}
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -114,7 +115,7 @@ export default function UploadModal({ isOpen, onClose }: UploadModalProps) {
                   <div className="space-y-4">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                        Nombre
+                        {t('common.name')}
                       </label>
                       <input
                         type="text"
@@ -128,7 +129,7 @@ export default function UploadModal({ isOpen, onClose }: UploadModalProps) {
                     
                     <div>
                       <label htmlFor="description" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                        Descripción
+                        {t('common.description')}
                       </label>
                       <textarea
                         id="description"
@@ -141,7 +142,7 @@ export default function UploadModal({ isOpen, onClose }: UploadModalProps) {
                     
                     <div>
                       <label htmlFor="url" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                        URL de la imagen
+                        {t('upload.imageUrl')}
                       </label>
                       <input
                         type="text"
@@ -152,13 +153,13 @@ export default function UploadModal({ isOpen, onClose }: UploadModalProps) {
                         className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 shadow-sm focus:border-sky-500 focus:ring-sky-500 text-sm bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
                       />
                       <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                        Ingresa una URL pública o la ruta relativa a un archivo local
+                        {t('upload.urlHelp')}
                       </p>
                     </div>
                     
                     <div>
                       <label htmlFor="type" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                        Tipo de archivo
+                        {t('upload.fileType')}
                       </label>
                       <select
                         id="type"
@@ -176,14 +177,14 @@ export default function UploadModal({ isOpen, onClose }: UploadModalProps) {
                       </select>
                       {type === 'pdf' && (
                         <p className="text-xs text-amber-600 dark:text-amber-400 mt-1">
-                          Los archivos PDF se mostrarán con un icono y no se previsualizarán.
+                          {t('upload.pdfNotice')}
                         </p>
                       )}
                     </div>
                     
                     <div>
                       <span className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                        Categorías
+                        {t('categories.title')}
                       </span>
                       <div className="grid grid-cols-2 gap-x-4 gap-y-2">
                         {categories.map((category) => (
@@ -209,7 +210,7 @@ export default function UploadModal({ isOpen, onClose }: UploadModalProps) {
                     <div>
                       <div className="flex justify-between items-center mb-2">
                         <span className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                          Etiquetas
+                          {t('tags.title')}
                         </span>
                         {hasMoreTags && (
                           <button
@@ -217,7 +218,7 @@ export default function UploadModal({ isOpen, onClose }: UploadModalProps) {
                             onClick={() => setShowAllTags(!showAllTags)}
                             className="text-xs text-sky-600 dark:text-sky-400 hover:underline"
                           >
-                            {showAllTags ? 'Mostrar menos' : 'Ver todas'}
+                            {showAllTags ? t('common.showLess') : t('common.showAll')}
                           </button>
                         )}
                       </div>
@@ -241,7 +242,7 @@ export default function UploadModal({ isOpen, onClose }: UploadModalProps) {
                         ))}
                       </div>
                       <div className="mt-2 text-xs text-gray-500 dark:text-gray-400">
-                        Selecciona etiquetas para facilitar la búsqueda
+                        {t('upload.tagsHelp')}
                       </div>
                     </div>
                   </div>
@@ -252,13 +253,13 @@ export default function UploadModal({ isOpen, onClose }: UploadModalProps) {
                       onClick={onClose}
                       className="mt-2 sm:mt-0 inline-flex justify-center rounded-md border border-gray-300 dark:border-gray-600 px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
                     >
-                      Cancelar
+                      {t('common.cancel')}
                     </button>
                     <button
                       type="submit"
                       className="inline-flex justify-center rounded-md border border-transparent bg-sky-500 dark:bg-sky-600 px-4 py-2 text-sm font-medium text-white hover:bg-sky-600 dark:hover:bg-sky-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
                     >
-                      Guardar
+                      {t('common.save')}
                     </button>
                   </div>
                 </form>

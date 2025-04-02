@@ -48,7 +48,12 @@
     "addTags": "Añadir Etiquetas",
     "description": "Descripción",
     "upload": "Subir",
-    "cancel": "Cancelar"
+    "cancel": "Cancelar",
+    "imageUrl": "URL de la imagen",
+    "urlHelp": "Ingresa una URL pública o la ruta relativa a un archivo local",
+    "fileType": "Tipo de archivo",
+    "pdfNotice": "Los archivos PDF se mostrarán con un icono y no se previsualizarán.",
+    "tagsHelp": "Selecciona etiquetas para facilitar la búsqueda"
   },
   "imageViewer": {
     "delete": "Eliminar Imagen",

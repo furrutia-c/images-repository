@@ -1,6 +1,6 @@
 {
   "header": {
-    "title": "Brand Center",
+    "title": "Image Repository",
     "uploadButton": "Upload Image",
     "searchPlaceholder": "Search images..."
   },
@@ -48,7 +48,12 @@
     "addTags": "Add Tags",
     "description": "Description",
     "upload": "Upload",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "imageUrl": "Image URL",
+    "urlHelp": "Enter a public URL or relative path to a local file",
+    "fileType": "File type",
+    "pdfNotice": "PDF files will be displayed with an icon and will not be previewed.",
+    "tagsHelp": "Select tags to facilitate searching"
   },
   "imageViewer": {
     "delete": "Delete Image",
